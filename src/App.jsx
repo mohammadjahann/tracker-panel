@@ -1,6 +1,7 @@
 import { useRoutes } from "react-router-dom"
 import routes from "./Routes"
 import Header from "./Components/Header"
+import PanelContextProvider from "./Context/PanelContext"
 
 
 
@@ -11,7 +12,9 @@ function App() {
 
   return (
     <>
-      {route}
+      <PanelContextProvider>
+        {route}
+      </PanelContextProvider>
     </>
   )
 }

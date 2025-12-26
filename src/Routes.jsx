@@ -6,7 +6,6 @@ import Devices from "./Components/Devices";
 import Massages from "./Components/Massages";
 import Tracking from "./Components/Tracking";
 
-const isLoggedIn = true;
 
 const routes = [
 
@@ -14,7 +13,7 @@ const routes = [
 
 
     {
-        element: <ProtectedRoute isAllowed={isLoggedIn} />, children: [
+        element: <ProtectedRoute/>, children: [
 
             { path: '/', element:<DashBoard/>},
             { path: '/devices', element:<Devices/>},
