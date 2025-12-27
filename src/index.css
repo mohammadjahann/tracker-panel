@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'MTNIrancell-Bold';
+    src: url('/fonts/MTNIrancell-Bold.ttf') format('truetype');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'MTNIrancell-DemiBold';
+    src: url('/fonts/MTNIrancell-DemiBold.ttf') format('truetype');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'MTNIrancell-ExtraLight';
+    src: url('/fonts/MTNIrancell-ExtraLight.ttf') format('truetype');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'MTNIrancell-Light';
+    src: url('/fonts/MTNIrancell-Light.ttf') format('truetype');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'MTNIrancell-Medium';
+    src: url('/fonts/MTNIrancell-Medium.ttf') format('truetype');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Oi-Regular';
+    src: url('/fonts/Oi-Regular.ttf') format('truetype');
+    font-display: swap;
+  }
+}

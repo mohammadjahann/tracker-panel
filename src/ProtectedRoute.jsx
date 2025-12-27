@@ -6,18 +6,24 @@ import { PanelContext } from './Context/PanelContext'
 
 const ProtectedRoute = () => {
 
-    const {isLoggedIn} = useContext(PanelContext)
+    const { isLoggedIn } = useContext(PanelContext)
 
     if (!isLoggedIn) {
         return <Navigate to='/login' replace />
     }
 
-    return <>
-        <Header />
-        <NavBar/>
-        <Outlet />
+    return <div className='flex flex-col w-full min-h-screen'>
 
-    </>
+        <Header />
+
+        <div className='flex'>
+            <Outlet />
+
+            <NavBar />
+
+        </div>
+
+    </div>
 
 }
 
