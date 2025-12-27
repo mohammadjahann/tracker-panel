@@ -39,7 +39,7 @@ const NavBar = () => {
     <>
       {!isMobile && (
 
-        <div className='w-[15%]  h-[550px] shadow-xl bg-white/30 backdrop-blur-2xl dark:bg-white/10 dark:backdrop-blur-2xl dark:border dark:border-white/10 mt-4 rounded-br-xl flex flex-col p-2 text-right gap-2'>
+        <div className='w-[15%] h-[600px] shadow-xl bg-white/30 backdrop-blur-2xl dark:bg-white/10 dark:backdrop-blur-2xl dark:border dark:border-white/10 mt-4 rounded-br-xl flex flex-col p-2 text-right gap-2'>
           {NavMenu()}
         </div>
       )}

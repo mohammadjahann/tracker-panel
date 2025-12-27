@@ -4,7 +4,7 @@ const PanelContext = createContext()
 
 const PanelContextProvider = ({ children }) => {
 
-    const [userData, setUserData] = useState([])
+    const [userData, setUserData] = useState()
     const [isLoggedIn, setIsLoggedIn] = useState(false)
     const [isDark, setIsDark] = useState(true)
     const [showSideMenu, setShowSideMenu] = useState(false)
