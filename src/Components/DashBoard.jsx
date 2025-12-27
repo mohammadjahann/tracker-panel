@@ -7,11 +7,6 @@ const DashBoard = () => {
 
   const { userData } = useContext(PanelContext)
 
-
-
-  console.log(userData.devices
-  );
-
   // map setting 
 
   const mapRef = useRef(null)
@@ -107,7 +102,7 @@ const DashBoard = () => {
                 <div key={index} className='w-full text-sm flex justify-between relative bg-black/10 dark:bg-white/10 p-3 rounded-sm'>
                   <span>{year}/{month}/{day}</span>
                   <span>{message.title}</span>
-                  {!message.isReaded && <div className='w-1 h-1 rounded-full bg-red-400 absolute top-1 -right-[6px]'></div>}
+                  {!message.isReaded && <div className='w-2 h-2 rounded-full bg-red-400 absolute top-1 -right-[6px]'></div>}
                 </div>
               )
             })}
