@@ -12,7 +12,7 @@ const ProtectedRoute = () => {
         return <Navigate to='/login' replace />
     }
 
-    return <div className='flex flex-col w-full min-h-screen'>
+    return <div className='flex flex-col items-center justify-center w-[80%] min-h-screen mx-auto'>
 
         <Header />
 
