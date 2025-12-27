@@ -10,11 +10,11 @@ const Header = () => {
 
   const { userData ,setShowSideMenu} = useContext(PanelContext)
 
-  console.log(userData);
+
 
 
   return (
-    <header className=" w-full bg-white/80 backdrop-blur-xl dark:bg-white/10 dark:backdrop-blur-2xl p-3 rounded-t-lg text-gray-900 dark:text-gray-100 flex items-center justify-between ">
+    <header className=" w-full bg-white/30 shadow-xl backdrop-blur-3xl dark:bg-white/10 dark:backdrop-blur-2xl p-3 rounded-t-lg text-gray-900 dark:text-gray-100 flex items-center justify-between ">
 
      <div className='flex justify-center items-center gap-2'>
        <BiExit className=' rotate-180 cursor-pointer hidden lg:inline-block text-[30px]' />
