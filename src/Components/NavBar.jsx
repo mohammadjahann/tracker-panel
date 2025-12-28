@@ -25,9 +25,6 @@ const NavBar = () => {
         <NavLink to={'/massages'} className={navLinkStyler}>
           پیغام ها
         </NavLink>
-        <NavLink to={'/devices'} className={navLinkStyler}>
-          دستگاه ها
-        </NavLink>
       </>
     )
   }

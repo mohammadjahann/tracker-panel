@@ -3,8 +3,8 @@ import LogIn from "./Components/LogIn";
 import ProtectedRoute from "./ProtectedRoute";
 import DashBoard from "./Components/DashBoard"
 import Devices from "./Components/Devices";
-import Massages from "./Components/Massages";
 import Tracking from "./Components/Tracking";
+import Messages from "./Components/Messages";
 
 
 const routes = [
@@ -16,8 +16,7 @@ const routes = [
         element: <ProtectedRoute/>, children: [
 
             { path: '/', element:<DashBoard/>},
-            { path: '/devices', element:<Devices/>},
-            { path: '/massages', element:<Massages/>},
+            { path: '/massages', element:<Messages/>},
             { path: '/tracking', element:<Tracking/>},
         ]
     }

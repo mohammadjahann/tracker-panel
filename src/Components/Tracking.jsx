@@ -8,7 +8,6 @@ const Tracking = () => {
 
   const { userData } = useContext(PanelContext)
 
-  console.log(userData.devices)
 
   const deviceChangeHandler = (e) => {
 
