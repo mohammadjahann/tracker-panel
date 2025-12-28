@@ -2,7 +2,6 @@ import { Children } from "react";
 import LogIn from "./Components/LogIn";
 import ProtectedRoute from "./ProtectedRoute";
 import DashBoard from "./Components/DashBoard"
-import Devices from "./Components/Devices";
 import Tracking from "./Components/Tracking";
 import Messages from "./Components/Messages";
 

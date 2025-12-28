@@ -25,7 +25,7 @@ const LogIn = () => {
   const res = await fetch('https://694c38b2da5ddabf00365d1f.mockapi.io/users')
   const data = await res.json()
 
-  const foundedUser = data.find(user=>user.userData.email === email && user.userData.password === password)
+  const foundedUser = data.find(user=>user.userData.email === email.toLowerCase() && user.userData.password === password.toLowerCase())
 
   if (foundedUser){
     setShowSuccses(true)

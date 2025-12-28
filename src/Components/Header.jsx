@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { PanelContext } from '../Context/PanelContext'
-import { BiExit, BiMessageAltDetail } from "react-icons/bi";
+import { BiExit} from "react-icons/bi";
 import Message from './Message';
 import Switch from './DarkModeSwitch';
 import { IoMenu } from "react-icons/io5";
@@ -8,16 +8,20 @@ import { IoMenu } from "react-icons/io5";
 
 const Header = () => {
 
-  const { userData ,setShowSideMenu} = useContext(PanelContext)
+  const { userData ,setShowSideMenu,setUserData,setIsLoggedIn} = useContext(PanelContext)
 
 
 
+const exitHandler = () =>{
+  setIsLoggedIn(false)
+  setUserData([])
+}
 
   return (
     <header className=" w-full bg-white/30 shadow-xl backdrop-blur-3xl dark:bg-white/10 dark:backdrop-blur-2xl p-3 rounded-t-lg text-gray-900 dark:text-gray-100 flex items-center justify-between ">
 
      <div className='flex justify-center items-center gap-2'>
-       <BiExit className=' rotate-180 cursor-pointer hidden lg:inline-block text-[30px]' />
+       <BiExit onClick={exitHandler} className=' rotate-180 cursor-pointer hidden lg:inline-block text-[30px]' />
        <Switch styles={'hidden lg:inline-block mt-3'}/>
        <IoMenu  className='lg:hidden text-[20px] sm:text-[30px]' onClick={()=>setShowSideMenu(prev=>!prev)}/>
      </div>

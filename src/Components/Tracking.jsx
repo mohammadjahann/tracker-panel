@@ -39,13 +39,18 @@ const Tracking = () => {
   useEffect(() => {
     if (!chosedDevice || !mapRef.current) return
 
-   
+
     if (markerRef.current) {
       markerRef.current.remove()
     }
 
-   
-    markerRef.current = L.marker(chosedDevice.lastLocation)
+    const myIcon = L.icon({
+      iconUrl: 'https://uploadkon.ir/uploads/f2fe28_25onlineicon.png',
+      iconSize: [20, 35]
+    })
+
+
+    markerRef.current = L.marker(chosedDevice.lastLocation, { icon: myIcon })
       .addTo(mapRef.current)
 
     mapRef.current.setView(chosedDevice.lastLocation, 14)

@@ -26,12 +26,12 @@ const DashBoard = () => {
     }).addTo(mapRef.current)
 
 
-    const onlineIcon = './public/leaflet-icons/oflineicon.png'
+    const onlineIcon = 'https://uploadkon.ir/uploads/f2fe28_25onlineicon.png'
 
-    const oflineIcon = './public/leaflet-icons/onlineicon.png'
+    const oflineIcon = 'https://uploadkon.ir/uploads/167528_25oflineicon.png'
 
     userData.devices.map(device => {
-      const url = device.status === 'Online' ? oflineIcon : onlineIcon
+      const url = device.status === 'Online' ? onlineIcon : oflineIcon
 
       const myIcon = L.icon({
         iconUrl: url,
@@ -49,7 +49,7 @@ const DashBoard = () => {
 
 
   return (
-    <div className='w-full lg:w-[84%] min-h-[600px] shadow-xl bg-white/30 backdrop-blur-2xl dark:bg-white/10 dark:backdrop-blur-2xl dark:border dark:border-white/10 mt-4 rounded-bl-xl flex flex-col md:flex-row justify-between gap-2 text-right p-3 text-gray-900 dark:text-gray-100 '>
+    <div className='w-full lg:w-[84%] min-h-[600px] shadow-xl bg-white/30 backdrop-blur-2xl dark:bg-white/10 dark:backdrop-blur-2xl dark:border dark:border-white/10 mt-4 rounded-bl-xl flex flex-col md:flex-row justify-between gap-2 text-right p-3 text-gray-900 dark:text-gray-100 mb-2 '>
 
       {/* map section */}
       <div className=' w-full md:w-[65%] h-[550px] flex flex-col justify-center items-center gap-2'>
